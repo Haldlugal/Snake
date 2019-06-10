@@ -1,0 +1,46 @@
+canvas {
+    border: 1px solid black;
+}
+
+.canvas-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#score {
+    position: absolute;
+    left: 190px;
+    top: 18px;
+}
+#gameOver {
+    display: none;
+    position: absolute;
+    height: 0;
+    width: 150px;
+    top: 160px;
+    left: 555px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+}
+#startButton {
+    position: absolute;
+    width: 150px;
+    left: 555px;
+    text-align: center;
+    font-size: 50px;
+    background-color: aquamarine;
+    top: 210px;
+}
+#isPaused {
+    display: none;
+    position: absolute;
+    width: 250px;
+    left: 555px;
+    text-align: center;
+    font-size: 50px;
+    top: 210px;
+}
+#isPaused .pause-text {
+    font-size:20px;
+}
