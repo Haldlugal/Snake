@@ -3,24 +3,37 @@
     <head>
         <meta charset="utf-8"/>
         <title>Canvas tutorial</title>
-        <script src="game/game.js"></script>
         <link rel="stylesheet" href="css/style.css">
+        <script src="game/game.js" type="module"></script>
     </head>
     <body>
-        <div id="score">SCORE</div>
-        <div id="gameOver">
-            <p>GAME OVER</p>
-            <button id="tryAgainButton">Try again</button>
-        </div>
-        <div id="isPaused">
-            PAUSE
-            <p class="pause-text">Press Space to continue</p>
-        </div>
-        <div id="startButton">
-            Start Game
-        </div>
-        <div class="canvas-container">
+        <div id="container"></div>
+        <!--<div class="canvas-container" id="gameFrame">
+            <div class="statistics">
+                <div id="level">Level</div>
+                <div id="score">Score</div>
+            </div>
+            <div id="gameOver">
+                <p>GAME OVER</p>
+                <button id="tryAgainButton">Try again</button>
+            </div>
+            <div id="isPaused">
+                PAUSE
+                <p class="pause-text">Press Space to continue</p>
+            </div>
+            <div id="startButton">
+                Start Game
+            </div>
+            <table id="highScores">
+
+            </table>
+            <form id="leaderForm">
+                <h3>New highscore!</h3>
+                <p>Enter your name</p>
+                <input id="playerName" type="text" minlength="3" maxlength="12" required>
+                <button type="submit">Submit</button><button id="leaderCancelButton">Cancel</button>
+            </form>
             <canvas id="canvas" width="900" height="600"></canvas>
-        </div>
+        </div>-->
     </body>
 </html>

@@ -3,44 +3,99 @@ canvas {
 }
 
 .canvas-container {
+    position: relative;
     width: 900px;
     margin: 0 auto;
 }
 
-#score {
+.statistics {
     position: absolute;
-    left: 190px;
-    top: 18px;
+    left: 20px;
+    top: 20px;
 }
 #gameOver {
-    display: none;
     position: absolute;
     height: 0;
     width: 150px;
     top: 160px;
-    left: 555px;
+    left: 375px;
     text-align: center;
     margin: 0 auto;
     font-size: 50px;
 }
+
+#gameOver p {
+    margin-bottom:0;
+}
+#leaderForm {
+    position: absolute;
+    height: 0;
+    width: 250px;
+    top: 160px;
+    left: 325px;
+    text-align:center;
+}
+#leaderForm input {
+    display: block;
+    margin: 0 auto 15px;
+}
+#leaderForm h3 {
+    margin-bottom: 15px;
+}
+#leaderForm p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+#leaderCancelButton {
+    margin-left:15px;
+}
 #startButton {
     position: absolute;
     width: 150px;
-    left: 555px;
+    left: 375px;
     text-align: center;
     font-size: 50px;
     background-color: aquamarine;
     top: 210px;
 }
 #isPaused {
-    display: none;
     position: absolute;
     width: 250px;
-    left: 555px;
+    left: 325px;
     text-align: center;
     font-size: 50px;
     top: 210px;
 }
 #isPaused .pause-text {
     font-size:20px;
+}
+
+#highScores {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#highScores {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    text-align: left;
+    border-collapse: collapse;
+}
+#highScores td {
+    border: 1px solid #AAAAAA;
+    padding: 5px 2px;
+    width:50%;
+}
+#highScores tr:nth-child(even) {
+    background: #D0E4F5;
+}
+#highScores tr:nth-child(not-even) {
+    background: #D0E4F5;
+}
+
+.invisible {
+    display: none !important;
 }
